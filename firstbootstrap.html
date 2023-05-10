@@ -12,7 +12,7 @@
         <li><a href="#">Home<i class="icon-edit"></i></a></li>
         <li class="active"><a href="#"><i class="icon-book"></i>Products</a></li>
         <li><a href="#">Contact </a></li>
-        <ul class="nav nav-tabs">
+        <!-- <ul class="nav nav-tabs">
             <li class="dropdown">
             <a class="dropdown-toggle"
             data-toggle="dropdown"
@@ -28,7 +28,7 @@
             <li><a href="#">premium</a></li>
             </ul>
             </li>
-           </ul>
+           </ul> -->
            
         <li><a href="#">Explore</a></li>
         <li><a href="#">Explore</a></li>
@@ -39,7 +39,7 @@
     </ul>
 
     <div style="margin-top: 50px; height:200px; width: 100%;"></div>
-    <table class="">
+    <table class="table table-stripped table-hovers">
         <tr class="error">
             <td>Item</td>
             <td>Price($)</td>
@@ -66,15 +66,40 @@
             <td>20</td>
         </tr>
     </table>
-    <!-- <form> -->
+    <form>
+        <fieldset>
+            <legend>Input Credentials</legend>
+            <div>
+                <div class="control-group error">
+                    <label class="control-label" for="inputError">Username</label>
+                    <div class="controls">
+                    <input type="text" id="inputError">
+                    <span class="help-inline">invalid Username</span>
+                </div>
+                <div class="divider"></div>
+                <div class="control-group error">
+                    <label class="control-label" for="inputError">Password</label>
+                    <div class="controls">
+                    <input type="password" id="inputError">
+                    <span class="help-inline">Password is incorrect</span>
+                </div>
+               </div>
+               
+                   
+            </div>
 
-        <!-- <button class="btn btn-success">submit</button>&nbsp; <button class="btn btn-danger">cancel</button> -->
-    <!-- </form> -->
+            <button class="btn btn-success">login</button>&nbsp; <button class="btn btn-danger">cancel</button>
+        </fieldset>
+
+    </form>
 <p></p>
     <div class="row">
-        <div class="col-md-4"><b>QWERTY</b></div>
-        <div class="col-md-4"><b>AZERTY</b></div>
-        <div class="col-md-4"><b>DVORAK</b></div>
+        <div class="col-md-2"><b>QWERTY</b></div>
+        <div class="col-md-2"><b>AZERTY</b></div>
+        <div class="col-md-2"><b>DVORAK</b></div>
+        <div class="col-md-2"><b>ASDFGH</b></div>
+        <div class="col-md-2"><b>ROLAND</b></div>
+        <div class="col-md-2"><b>YAMAHA</b></div>
     </div>
 </body>
 </html>
