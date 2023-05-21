@@ -9,19 +9,21 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </head>
 <body>
-   <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+   <nav class="navbar navbar-expand-sm navbar-light " style="background-color: #e3f2fd;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">primary</a>
+            <a class="navbar-brand" href="#">Redox.com</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
                 aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarID">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" aria-current="page" href="#">Services</a>
-                    <a class="nav-link" aria-current="page" href="#">Products</a>
-                    <a class="nav-link" aria-current="page" href="#">About</a>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" aria-current="page" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                    <!-- <div class="divider"></div> -->
+                    <hr>
+                    <a class="nav-link active" aria-current="page" href="#">Services</a><hr>
+                    <a class="nav-link" aria-current="page" href="#">Products</a><hr>
+                    <a class="nav-link" aria-current="page" href="#">About</a><hr>
                     <a class="nav-link" aria-current="page" href="#">Contact</a>
                     
                 </div>
@@ -65,6 +67,11 @@
     <div class="alert alert-danger alert-dismissible fade show" role="alert" id="alert">
         <strong>ERROR!</strong>Access Denied.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="button"> &#10006;</button>
+      </div>
+
+      <div class="progress">
+          <div class="progress-bar  bg-${2|success,info,success,warning,wardanger}}" role="progressbar" style="width: 25%;"
+              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" ${6| ,progress-bar-animated}>loading...</div>
       </div>
 
       <script>
