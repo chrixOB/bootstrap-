@@ -31,13 +31,52 @@
         </div>
     </nav>
 
-    <div class="modal-body">
-      <h2 class="fs-5">Popover in a modal</h2>
-      <p>This <button class="btn btn-secondary" data-bs-toggle="popover" title="Popover title" data-bs-content="Popover body content is set in this attribute.">button</button> triggers a popover on click.</p>
-      <hr>
-      <h2 class="fs-5">Tooltips in a modal</h2>
-      <p><a href="#" data-bs-toggle="tooltip" title="Tooltip">This link</a> and <a href="#" data-bs-toggle="tooltip" title="Tooltip">that link</a> have tooltips on hover.</p>
+    <!-- modal trigger -->
+<section class="bg-light">
+  <div class="container">
+    <div class="text-center">
+      <h2>Stay in the loop</h2>
+      <p class="lead">Get the latest updates as they happen</p>
     </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <p class="text-muted my-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam illo ipsa quos qui non incidunt nesciunt 
+          velit ut animi, sint nostrum itaque? 
+          Suscipit sequi libero voluptatem nostrum incidunt sed in.
+        </p>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Register for updates </button>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- modal itself -->
+<div class="modal fade" id="#reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-title">Get The Latest Updates</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum corrupti voluptate sunt doloribus voluptatem! Reiciendis 
+          expedita provident ratione sapiente aliquid minus laborum amet. Accusamus quisquam illo, 
+          consequatur sapiente laudantium eligendi, optio et cum 
+          necessitatibus, pariatur dolor magni tenetur 
+          ex atque! Nesciunt, beatae eaque unde sint tenetur repellendus maxime esse vero.
+        </p>
+        <label for="modal-email" class="form-label">Your email address</label>
+        <input type="email" class="form-control" id="modal-email" placeholder="e.g. mario@example.com">
+      </div>
+    </div>
+  </div>
+</div>  
 
     <p style="margin-top: 40px; margin-bottom: 40px;"></p>
     <table class="table table-bordered table-hover">
@@ -180,25 +219,7 @@
         })
 
 
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
-  'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
-
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
+  
 
       </script>
 </body>
