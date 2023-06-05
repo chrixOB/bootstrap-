@@ -31,71 +31,19 @@
         </div>
     </nav>
 
-    <!-- modal trigger -->
-<section class="bg-light">
-  <div class="container">
-    <div class="text-center">
-      <h2>Stay in the loop</h2>
-      <p class="lead">Get the latest updates as they happen</p>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-md-8 text-center">
-        <p class="text-muted my-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam illo ipsa quos qui non incidunt nesciunt 
-          velit ut animi, sint nostrum itaque? 
-          Suscipit sequi libero voluptatem nostrum incidunt sed in.
-        </p>
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Register for updates </button>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </div>
-</section>
+    <script async>
+     const buttontrig = document.getElementById("trigger");
+      buttontrig.addEventListener("click", function(){
+        alert('Hi there!!!!');
+      }
+)
+    </script>
 
+<!-- button trigger -->
+<button class="button" id="trigger" style="background: rgb(123, 123, 218); color: white;"
+onclick="openModal()">CLICK ME </button>
 
 <!-- modal itself -->
-<!-- <div class="modal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
-<div class="modal fade" id="#reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modal-title">Get The Latest Updates</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-      </div>
-      <div class="modal-body">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum corrupti voluptate sunt doloribus voluptatem! Reiciendis 
-          expedita provident ratione sapiente aliquid minus laborum amet. Accusamus quisquam illo, 
-          consequatur sapiente laudantium eligendi, optio et cum 
-          necessitatibus, pariatur dolor magni tenetur 
-          ex atque! Nesciunt, beatae eaque unde sint tenetur repellendus maxime esse vero.
-        </p>
-        <label for="modal-email" class="form-label">Your email address</label>
-        <input type="email" class="form-control" id="modal-email" placeholder="e.g. mario@example.com">
-      </div>
-    </div>
-  </div>
-</div>  
 
     <p style="margin-top: 40px; margin-bottom: 40px;"></p>
     <table class="table table-bordered table-hover">
@@ -237,6 +185,12 @@
             alert.style.display = 'none';
         })
 
+      // const buttontrig = document.getElementById("trigger");
+      // buttontrig.addEventListener("click", function(){
+      //   alert('Hi there!!!!');
+      // }
+// )
+      
 
   
 
